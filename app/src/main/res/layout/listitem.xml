@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/apple"
+            android:id="@+id/ivShop"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitle"
+            tools:ignore="HardcodedText,RtlHardcoded"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/ivShop"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkSelect"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:text="@string/goodinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnShopInfo"
+            android:layout_alignParentRight="true"
+            tools:ignore="RelativeOverlap,RtlHardcoded" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvGoodName"
+            tools:ignore="HardcodedText,RtlHardcoded"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/ivShop"
+            android:layout_marginTop="30dp"/>
+    </RelativeLayout>
+</LinearLayout>
